@@ -1,0 +1,118 @@
+.gzm-title {
+  color: #000;
+
+  &[color='primary'] {
+    color: #007bff;
+  }
+
+  &[color='secondary'] {
+    color: #6c757d;
+  }
+
+  &[color='success'] {
+    color: #28a745;
+  }
+
+  &[color='danger'] {
+    color: #dc3545;
+  }
+
+  &[color='warning'] {
+    color: #ffc107;
+  }
+
+  &[color='info'] {
+    color: #17a2b8;
+  }
+
+  &[color='light'] {
+    color: #f8f9fa;
+  }
+
+  &[color='dark'] {
+    color: #343a40;
+  }
+
+  &[color='white'] {
+    color: #fff;
+  }
+
+  &[fontWeight='light'] {
+    font-weight: 300;
+  }
+
+  &[fontWeight='regular'] {
+    font-weight: 400;
+  }
+
+  &[fontWeight='medium'] {
+    font-weight: 500;
+  }
+
+  &[fontWeight='bold'] {
+    font-weight: 700;
+  }
+
+  &[fontWeight='black'] {
+    font-weight: 900;
+  }
+
+  &[size='small'] {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  &[size='medium'] {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+
+  &[size='large'] {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  &[size='x-large'] {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  &[size='xx-large'] {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  &[size='xxx-large'] {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+
+  &[size='xxxx-large'] {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  &[lineHeight='small'] {
+    line-height: 1.2rem;
+  }
+
+  &[lineHeight='medium'] {
+    line-height: 1.8rem;
+  }
+
+  &[lineHeight='large'] {
+    line-height: 2rem;
+  }
+
+  &[lineHeight='x-large'] {
+    line-height: 2.2rem;
+  }
+
+  &[lineHeight='xx-large'] {
+    line-height: 2.4rem;
+  }
+
+  &[lineHeight='xxx-large'] {
+    line-height: 2.6rem;
+  }
+}

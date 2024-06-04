@@ -1,0 +1,19 @@
+.gzm-img {
+  width: 100%;
+  height: 100%;
+
+  &:hover {
+    transition: all 0.5s ease-out;
+    opacity: 0.8;
+  }
+  picture img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+}

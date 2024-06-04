@@ -1,0 +1,22 @@
+:host {
+  .gzm-divider-text-link {
+    ::ng-deep .gzm-link {
+      .gzm-divider-text-link__text {
+        margin: 0.5rem 0rem 1rem 0rem;
+      }
+    }
+
+    &:hover {
+      ::ng-deep .gzm-link .divider {
+        .red-progress {
+          width: 100% !important; // Change the width of the red part to 100% on hover
+        }
+      }
+    }
+  }
+
+  .gzm-divider-text-link__text {
+    display: flex;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,17 @@
+<div
+  class="divider"
+  [ngStyle]="{
+    'background-color': properties.grayColor,
+    height: properties.height
+  }"
+>
+  <div
+    class="red-progress"
+    [ngStyle]="{
+      'background-color': properties.redColor,
+      height: '100%',
+      width: properties.initialRedWidth,
+      transition: 'width ' + properties.transitionDuration + ' ease-in-out'
+    }"
+  ></div>
+</div>

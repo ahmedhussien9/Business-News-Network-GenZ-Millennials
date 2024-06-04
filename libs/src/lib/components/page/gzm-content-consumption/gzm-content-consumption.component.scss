@@ -1,0 +1,32 @@
+.content-consumption-wrapper {
+  margin: 1rem 4rem;
+}
+.featured-section {
+  display: grid;
+  grid-template-columns: 1.8fr 1.2fr 1fr;
+  gap: 2rem;
+}
+
+.innovate-section-wrapper {
+  &__innovateItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+.paid-content-wrapper {
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+.around-the-word-wrapper {
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.2rem;
+  }
+}

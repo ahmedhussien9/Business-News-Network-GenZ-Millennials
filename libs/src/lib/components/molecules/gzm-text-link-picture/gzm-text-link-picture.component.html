@@ -1,0 +1,14 @@
+<div class="gzm-text-link-picture">
+  <gzm-link [properties]="properties.url">
+    <div
+      class="wrapper"
+      [ngStyle]="{ gap: properties.picture.visible ? '1.2rem' : '0rem' }"
+    >
+      <gzm-picture
+        [properties]="properties.picture"
+        *ngIf="properties.picture.visible"
+      ></gzm-picture>
+      <gzm-text [properties]="properties.title"></gzm-text>
+    </div>
+  </gzm-link>
+</div>

@@ -1,0 +1,15 @@
+<ng-container *ngIf="properties.visible">
+  <div class="gzm-divider-text-link">
+    <gzm-link [properties]="properties.link">
+      <div class="gzm-divider-text-link__divider">
+        <gzm-divider [properties]="properties.divider"></gzm-divider>
+      </div>
+      <div class="gzm-divider-text-link__text">
+        <gzm-text [properties]="properties.text"></gzm-text>
+        <div class="icon">
+          <gzm-icon [properties]="properties.icon"></gzm-icon>
+        </div>
+      </div>
+    </gzm-link>
+  </div>
+</ng-container>

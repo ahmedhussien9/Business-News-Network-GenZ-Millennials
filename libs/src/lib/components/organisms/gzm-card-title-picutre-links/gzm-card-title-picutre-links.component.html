@@ -1,0 +1,28 @@
+<div class="card-title-picture-links">
+  <div class="divider-container" *ngIf="properties.dividerTextLinkIcon.visible">
+    <gzm-divider-text-link-icon [properties]="properties.dividerTextLinkIcon">
+    </gzm-divider-text-link-icon>
+  </div>
+  <div class="picture-link">
+    <gzm-picture-link
+      [properties]="properties.pictureLinkProps"
+    ></gzm-picture-link>
+  </div>
+  <div class="title-link">
+    <gzm-title-link [properties]="properties.titleLinkProps"></gzm-title-link>
+  </div>
+  <div class="text-link-list">
+    <ng-container
+      *ngFor="
+        let item of properties.textLinkPictureProps;
+        let i = index;
+        let last = last;
+        let first = first
+      "
+    >
+      <div *ngIf="first" class="division"></div>
+      <gzm-text-link-picture [properties]="item"></gzm-text-link-picture>
+      <div *ngIf="!last" class="division"></div>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.divider {
+  position: relative;
+  width: 100%;
+  height: 5px; // Default height
+  background-color: gray; // Default gray color
+
+  .red-progress {
+    position: absolute;
+    height: 100%; // Ensure the red-progress height is always 100% of the divider's height
+    width: 20px; // Initial width of the red part
+    background-color: red; // Default color
+    transition: width 0.5s ease-in-out;
+  }
+
+}

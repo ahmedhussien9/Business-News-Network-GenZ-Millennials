@@ -1,0 +1,60 @@
+<div class="content-consumption-wrapper">
+  <!--Start Featured Section -->
+  <section class="featured-section">
+    <div class="featured-section__item-1">
+      <gzm-card-title-picutre-links
+        [properties]="properties.mainFeatureItem"
+      ></gzm-card-title-picutre-links>
+    </div>
+
+    <div class="featured-section__item-2">
+      <ng-container *ngFor="let item of properties.secondFeatureItems">
+        <gzm-card-title-picutre-links
+          [properties]="item"
+        ></gzm-card-title-picutre-links>
+      </ng-container>
+    </div>
+
+    <div class="featured-section__item-3">
+      <ng-container *ngFor="let item of properties.thirdFeatureItems">
+        <gzm-card-title-picutre-links
+          [properties]="item"
+        ></gzm-card-title-picutre-links>
+      </ng-container>
+    </div>
+  </section>
+  <!--End Featured Section -->
+
+  <!--Start innovate Section -->
+  <section class="innovate-section-wrapper">
+    <div class="innovate-section-wrapper__title">
+      <gzm-title [properties]="InnovateTitleProps"></gzm-title>
+    </div>
+    <div class="innovate-section-wrapper__innovateItems">
+      <ng-container *ngFor="let item of properties.innovateItems">
+        <gzm-card-videopicture-icon-title
+          [properties]="item"
+        ></gzm-card-videopicture-icon-title>
+      </ng-container>
+    </div>
+  </section>
+
+  <!--End innovate Section-->
+
+  <!--Start innovate Section -->
+  <section class="paid-content-wrapper">
+    <div class="paid-content-wrapper__title">
+      <gzm-title [properties]="paidPartnerContentTitleProps"></gzm-title>
+      <gzm-title [properties]="paidPartnerContentTitleProp2"></gzm-title>
+    </div>
+    <div class="paid-content-wrapper__items">
+      <ng-container *ngFor="let item of properties.paidContentItems">
+        <gzm-card-videopicture-icon-title
+          [properties]="item"
+        ></gzm-card-videopicture-icon-title>
+      </ng-container>
+    </div>
+  </section>
+
+  <!--End innovate Section-->
+</div>

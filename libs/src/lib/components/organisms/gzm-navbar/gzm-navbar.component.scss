@@ -1,0 +1,83 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  color: #fff;
+  height: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  &__logo ::ng-deep .gzm-text {
+    font-weight: 700;
+    color: #000;
+    font-size: 1.5rem;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    ::ng-deep gzm-icon {
+      color: #000;
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+    .home,
+    .news {
+      ::ng-deep {
+        gzm-icon-link gzm-link a.active gzm-icon{
+          color: rgb(200, 202, 44);
+        }
+      }
+    }
+    .profile {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.75rem;
+        align-items: center;
+        justify-content: center;
+      }
+      img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: 3px solid rgb(239, 238, 238);
+      }
+      &__name {
+        color: #000;
+        font-weight: 700;
+      }
+      &__job {
+        color: #000;
+      }
+    }
+    .notification,
+    &__profile {
+      display: flex;
+      align-items: center;
+
+      &-count {
+        background-color: #f00;
+        color: #fff;
+        border-radius: 50%;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+        margin-left: -0.5rem;
+      }
+
+      img {
+        height: 24px;
+        width: 24px;
+      }
+    }
+
+    &__profile-name {
+      margin-left: 0.5rem;
+    }
+  }
+}

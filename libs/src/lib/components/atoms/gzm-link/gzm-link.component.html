@@ -1,0 +1,11 @@
+<a
+  [routerLink]="properties.link"
+  routerLinkActive="active"
+  [target]="properties.target"
+  class="gzm-link"
+  *ngIf="properties.visible"
+  (click)="properties.click()"
+>
+  <ng-content></ng-content>
+  <span *ngIf="properties.label">{{ properties.label }}</span>
+</a>

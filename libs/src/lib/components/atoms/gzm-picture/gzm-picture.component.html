@@ -1,0 +1,22 @@
+<picture class="gzm-picture" *ngIf="properties.visible">
+  <ng-container *ngIf="properties.sources">
+    <source
+      *ngFor="let source of properties.sources"
+      height="{{ source.height }}"
+      width="{{ source.width }}"
+      media="{{ source.media }}"
+      srcset="{{ source.img }}"
+    />
+  </ng-container>
+  <ng-container *ngIf="properties.defaultSource">
+    <img
+      src="{{ properties.defaultSource.img }}"
+      alt="Palestinians gather at the site of an Israeli strike on a camp area housing internally displaced people in Rafah, Gaza, on May 27."
+      class="gzm-img"
+      onload=""
+      onerror="imageLoadError(this)"
+      height="{{ properties.defaultSource.height }}"
+      width="{{ properties.defaultSource.width }}"
+    />
+  </ng-container>
+</picture>

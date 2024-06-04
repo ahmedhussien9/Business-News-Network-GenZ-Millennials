@@ -1,0 +1,38 @@
+:host {
+  ::ng-deep .gzm-text-link-picture {
+    .gzm-link {
+      .wrapper {
+        display: flex;
+        gap: 1rem;
+        
+        .gzm-picture {
+          img {
+            width: 150px;
+            height: 100px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+}
+
+:host {
+  .gzm-text-link-picture {
+    :ng-deep gzm-link .wrapper {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+  }
+}
+
+// :host {
+//     .gzm-text-link-picture {
+//       ::ng-deep {
+//         .gzm-link .wrapper .gzm-picture img {
+//           display: flex;
+//         }
+//       }
+//     }
+//   }

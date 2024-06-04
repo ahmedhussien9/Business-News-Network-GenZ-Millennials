@@ -1,0 +1,95 @@
+//////////////////
+///
+///
+.post-creator-container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: auto;
+}
+
+.post-creator-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  outline: none;
+}
+
+.post-creator-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.action:nth-child(1) {
+  ::ng-deep gzm-icon-link gzm-link .gzm-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  ::ng-deep gzm-icon-link gzm-link .gzm-link gzm-icon .icon {
+    color: blue;
+    font-size: 1.1rem;
+  }
+}
+
+.action:nth-child(2) {
+  ::ng-deep gzm-icon-link gzm-link .gzm-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  ::ng-deep gzm-icon-link gzm-link .gzm-link gzm-icon .icon {
+    color: brown;
+    font-size: 1.1rem;
+  }
+}
+
+.action:nth-child(3) {
+  ::ng-deep gzm-icon-link gzm-link .gzm-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  ::ng-deep gzm-icon-link gzm-link .gzm-link gzm-icon .icon {
+    color: red;
+    font-size: 1.1rem;
+  }
+}
+
+.action-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.action span {
+  font-size: 14px;
+}
+
+/////////////

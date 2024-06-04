@@ -1,0 +1,23 @@
+<nav class="navbar">
+  <div class="navbar__logo">
+    <gzm-text [properties]="logoProperties"></gzm-text>
+  </div>
+  <div class="navbar__icons">
+    <div class="home">
+      <gzm-icon-link [properties]="homePageProps"></gzm-icon-link>
+    </div>
+    <div class="news">
+      <gzm-icon-link [properties]="newsPageProps"></gzm-icon-link>
+    </div>
+    <div class="notification">
+      <gzm-icon [properties]="notificationIcon"></gzm-icon>
+    </div>
+    <div class="profile">
+      <img src="me.jpg" alt="Profile Icon" />
+      <div class="profile__info">
+        <span class="profile__name">Ahmed Khattab</span>
+        <span class="profile__job">FrontEnd Engineer</span>
+      </div>
+    </div>
+  </div>
+</nav>

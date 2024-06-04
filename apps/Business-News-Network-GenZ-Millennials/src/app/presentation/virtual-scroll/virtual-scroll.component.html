@@ -1,0 +1,88 @@
+<div class="container">
+  <div class="left"></div>
+  <div class="main">
+    <cdk-virtual-scroll-viewport
+      itemSize="350"
+      class="example-viewport"
+      (scrolledIndexChange)="loadMore()"
+    >
+      <gzm-post-creator></gzm-post-creator>
+
+      <div
+        *cdkVirtualFor="let post of posts; trackBy: trackByFn"
+        class="example-item"
+      >
+        <div class="post-card">
+          <div class="profile-card">
+            <div class="profile-image">
+              <img [src]="post.user.avatar" alt="Profile Image" />
+            </div>
+            <div class="profile-info">
+              <div class="profile-name">
+                <span>{{ post.user.name }}</span>
+                <span class="connection">• 2nd</span>
+              </div>
+              <div class="profile-title">
+                {{ post.user.jobTitle }}
+              </div>
+              <div class="profile-time">12h • Edited</div>
+            </div>
+            <div class="profile-actions">
+              <span class="dot"></span>
+              <button class="connect-btn">Connect</button>
+            </div>
+          </div>
+          <div class="post-content">
+            <p>
+              {{ post.content }}
+            </p>
+            <video
+              *ngIf="post.video"
+              [src]="post.video"
+              controls
+              class="video"
+            ></video>
+            <img
+              *ngIf="post.image"
+              [src]="post.image"
+              alt="JSON Image"
+              class="post-image"
+            />
+          </div>
+          <div class="post-footer">
+            <div class="post-actions">
+              <span>7 comments • 3 reposts</span>
+            </div>
+            <div class="post-buttons">
+              <button class="like-btn">Like</button>
+              <button class="comment-btn">Comment</button>
+              <button class="repost-btn">Repost</button>
+              <button class="send-btn">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </cdk-virtual-scroll-viewport>
+  </div>
+  <div class="right">
+    <div class="recommendations-container">
+      <div class="header">
+        <span>Add to your feed</span>
+      </div>
+      <div
+        class="recommendation"
+        *ngFor="let recommendation of recommendations"
+      >
+        <img [src]="recommendation.image" alt="Logo" class="logo" />
+        <div class="info">
+          <div class="name">{{ recommendation.name }}</div>
+          <div class="details">{{ recommendation.details }}</div>
+        </div>
+        <button class="follow-btn">+ Follow</button>
+      </div>
+      <div class="footer">
+        <a href="#">View all recommendations →</a>
+      </div>
+    </div>
+  </div>
+</div>
