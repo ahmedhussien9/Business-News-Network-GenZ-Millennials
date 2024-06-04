@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/apps/Business-News-Network-GenZ-Millennials/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
