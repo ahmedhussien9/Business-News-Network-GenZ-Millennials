@@ -1,9 +1,9 @@
 import { Route } from '@angular/router';
-import { VirtualScrollComponent } from './presentation/virtual-scroll/virtual-scroll.component';
-import { ContentConsumptionComponent } from './presentation/content-consumption/content-consumption.component';
+import { NewsPageComponent } from './presentation/news-page/feed-page.component';
+import { FeedPageComponent } from './presentation/feed-page/feed-page.component';
 
 export const appRoutes: Route[] = [
   { path: '', redirectTo: '/news', pathMatch: 'full' },
-  { path: 'news', component: ContentConsumptionComponent },
-  { path: 'feed', component: VirtualScrollComponent },
+  { path: 'news', component: NewsPageComponent },
+  { path: 'feed', component: FeedPageComponent },
 ];

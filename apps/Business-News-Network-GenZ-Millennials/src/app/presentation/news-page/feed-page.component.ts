@@ -16,15 +16,15 @@ import { MediaState } from '../../state/media/media.state';
     GzmContentConsumptionComponent,
     GzmCardVideoPictureIconTitleComponent,
   ],
-  selector: 'app-content-consumption',
-  templateUrl: './content-consumption.component.html',
-  styleUrl: './content-consumption.component.scss',
+  selector: 'app-feed-page',
+  templateUrl: './feed-page.component.html',
+  styleUrl: './feed-page.component.scss',
 })
-export class ContentConsumptionComponent {
-  contentConsumption!: GzmContentConsumptionClass;
+export class NewsPageComponent {
+  newsProps!: GzmContentConsumptionClass;
 
   constructor(private store: Store) {
-    this.contentConsumption = new GzmContentConsumptionClass();
+    this.newsProps = new GzmContentConsumptionClass();
   }
 
   ngOnInit(): void {
@@ -37,11 +37,11 @@ export class ContentConsumptionComponent {
 
     const videoItems = this.store.selectSnapshot(MediaState.type3Items);
 
-    this.contentConsumption.setVideoSectionData(videoItems);
-    this.contentConsumption.setMainFeatureItemData(mainFeatureItem);
-    this.contentConsumption.setSecondFeatureItemData(secondFeatureItems);
-    this.contentConsumption.setThirdFeatureItemData(thirdFeatureItems);
+    this.newsProps.setVideoSectionData(videoItems);
+    this.newsProps.setMainFeatureItemData(mainFeatureItem);
+    this.newsProps.setSecondFeatureItemData(secondFeatureItems);
+    this.newsProps.setThirdFeatureItemData(thirdFeatureItems);
 
-    this.contentConsumption.setPaidContentItems(paidContentItems);
+    this.newsProps.setPaidContentItems(paidContentItems);
   }
 }

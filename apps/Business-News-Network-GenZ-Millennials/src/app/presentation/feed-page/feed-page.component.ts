@@ -10,11 +10,11 @@ import { GzmPostCreatorComponent } from '@bbn/gzm-ui-library';
   standalone: true,
   imports: [CommonModule, ScrollingModule, GzmPostCreatorComponent],
   providers: [PostDataUseCase, PostRepositoryImpl], // Provide services and HttpClientModule
-  selector: 'app-virtual-scroll',
-  templateUrl: './virtual-scroll.component.html',
-  styleUrls: ['./virtual-scroll.component.scss'],
+  selector: 'app-feed-page',
+  templateUrl: './feed-page.component.html',
+  styleUrls: ['./feed-page.component.scss'],
 })
-export class VirtualScrollComponent implements OnInit {
+export class FeedPageComponent implements OnInit {
   posts: Post[] = [];
   page = 0;
   size = 30;
