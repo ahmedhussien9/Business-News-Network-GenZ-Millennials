@@ -6,13 +6,12 @@
 }
 
 .example-viewport {
-  height: 95vh;
+  height: 80vh;
   margin: auto;
   /* Hide scrollbar for Webkit browsers */
   &::-webkit-scrollbar {
     display: none;
   }
-
   /* Hide scrollbar for other browsers */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */

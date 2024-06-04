@@ -37,11 +37,11 @@ export class GzmNavbarComponent {
     this.notificationIcon.setIcon('icon-bell');
     this.notificationIcon.setVisibility(true);
 
-    this.homePageProps.setLink('/posts');
+    this.homePageProps.setLink('/feed');
     this.homePageProps.setIcon('icon-home');
     this.homePageProps.setVisibility(true);
 
-    this.newsPageProps.setLink('/content-consumption');
+    this.newsPageProps.setLink('/news');
     this.newsPageProps.setIcon('icon-newspaper');
     this.newsPageProps.setVisibility(true);
 

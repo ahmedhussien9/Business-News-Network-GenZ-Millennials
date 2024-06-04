@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start:app": "npx nx run Business-News-Network-GenZ-Millennials:serve --port=4200 --o"
+    "start:app": "npx nx run Business-News-Network-GenZ-Millennials:serve --port=4200 --o",
+    "build:app": "npx nx run Business-News-Network-GenZ-Millennials:build --configuration=production --base-href /Business-News-Network-GenZ-Millennials/"
   },
   "private": true,
   "dependencies": {

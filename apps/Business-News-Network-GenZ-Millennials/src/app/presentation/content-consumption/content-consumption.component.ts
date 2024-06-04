@@ -5,9 +5,9 @@ import {
   GzmContentConsumptionClass,
   GzmCardVideoPictureIconTitleComponent,
 } from '@bbn/gzm-ui-library';
-import { LoadMediaData } from '../../../state/media/media.actions';
-import { MediaState } from '../../../state/media/media.state';
 import { Store } from '@ngxs/store';
+import { LoadMediaData } from '../../state/media/media.actions';
+import { MediaState } from '../../state/media/media.state';
 
 @Component({
   standalone: true,
@@ -43,6 +43,5 @@ export class ContentConsumptionComponent {
     this.contentConsumption.setThirdFeatureItemData(thirdFeatureItems);
 
     this.contentConsumption.setPaidContentItems(paidContentItems);
-    
   }
 }
