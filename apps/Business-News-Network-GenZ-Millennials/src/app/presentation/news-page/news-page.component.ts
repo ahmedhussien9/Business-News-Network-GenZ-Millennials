@@ -16,9 +16,9 @@ import { MediaState } from '../../state/media/media.state';
     GzmContentConsumptionComponent,
     GzmCardVideoPictureIconTitleComponent,
   ],
-  selector: 'app-feed-page',
-  templateUrl: './feed-page.component.html',
-  styleUrl: './feed-page.component.scss',
+  selector: 'app-news-page',
+  templateUrl: './news-page.component.html',
+  styleUrl: './news-page.component.scss',
 })
 export class NewsPageComponent {
   newsProps!: GzmContentConsumptionClass;
